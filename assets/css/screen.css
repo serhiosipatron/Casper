@@ -168,6 +168,7 @@ body {
 
 .site-logo {
     max-height: 45px;
+    animation: filter 8s infinite;
 }
 
 .site-description {
@@ -230,7 +231,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     flex-shrink: 0;
     display: block;
     margin-right: 24px;
-    padding: 11px 0;
+    padding-bottom: 11px;
     color: #fff;
     font-size: 1.7rem;
     line-height: 1em;
@@ -246,6 +247,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: block;
     width: auto;
     height: 21px;
+    animation: filter 8s infinite;
 }
 
 .nav {
@@ -2276,5 +2278,29 @@ Usage (In Ghost editor):
     }
     .site-footer-nav a:first-child {
         margin-left: 0;
+    }
+}
+
+@keyframes filter {
+    from {
+        filter: hue-rotate(0deg) saturate(100%);
+    }
+    50% {
+        filter: hue-rotate(360deg) saturate(140%);
+    }
+    to {
+        filter: hue-rotate(0deg) saturate(100%);
+    }
+}
+
+@keyframes contrast {
+    from {
+        filter: contrast(100%);
+    }
+    80% {
+        filter: contrast(150%);
+    }
+    to {
+        filter: contrast(100%);
     }
 }
