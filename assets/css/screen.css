@@ -167,7 +167,7 @@ body {
 }
 
 .site-logo {
-    max-height: 45px;
+    max-height: 90px;
     animation: filter 8s infinite;
 }
 
@@ -187,6 +187,10 @@ body {
     }
     .site-description {
         font-size: 1.8rem;
+    }
+    .site-logo {
+        max-height: 45px;
+        animation: filter 8s infinite;
     }
 }
 
