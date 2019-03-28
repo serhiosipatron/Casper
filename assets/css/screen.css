@@ -126,7 +126,8 @@ body {
     left: 0;
     z-index: 10;
     display: block;
-    background: rgba(0,0,0,0.18);
+    background: linear-gradient(135deg,rgba(0,40,60,.8),rgba(0,20,40,.7));
+
 }
 
 .site-header:after {
@@ -716,9 +717,10 @@ make sure this only happens on large viewports / desktop-ish devices.
 }
 
 .post-full-image {
+    height: 600px;
     margin: 0 -10vw -165px;
     background: var(--lightgrey) center center;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -753,6 +755,9 @@ make sure this only happens on large viewports / desktop-ish devices.
     font-size: 2.2rem;
     line-height: 1.6em;
     background: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 }
 
 @media (max-width: 1170px) {
