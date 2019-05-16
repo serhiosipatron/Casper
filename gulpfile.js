@@ -90,8 +90,8 @@ try {
     config = null;
 }
 
-const REPO = 'TryGhost/Casper';
-const USER_AGENT = 'Casper';
+const REPO = 'TryGhost/casper';
+const USER_AGENT = 'casper';
 const CHANGELOG_PATH = path.join(process.cwd(), '.', 'changelog.md');
 
 const changelog = ({previousVersion}) => {
